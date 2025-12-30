@@ -1,46 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>AI World</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body{
-      margin:0;
-      font-family: Arial, sans-serif;
-      background:#0f172a;
-      color:white;
-      text-align:center;
-    }
-    header{
-      background:#020617;
-      padding:16px;
-      font-size:22px;
-    }
-    section{
-      padding:40px 20px;
-    }
-    button{
-      padding:12px 22px;
-      font-size:16px;
-      border:none;
-      border-radius:8px;
-      background:#22c55e;
-      cursor:pointer;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>AI World – Smart Future</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root{
+  --bg:#020617;
+  --card:#0f172a;
+  --accent:#38bdf8;
+  --text:#e5e7eb;
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:system-ui, Arial;
+  background:radial-gradient(circle at top, #020617, #000);
+  color:var(--text);
+}
+
+/* ===== HEADER ===== */
+header{
+  position:sticky;
+  top:0;
+  z-index:10;
+  background:rgba(2,6,23,.9);
+  backdrop-filter:blur(8px);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:14px 20px;
+  border-bottom:1px solid #0f172a;
+}
+
+header h2{
+  margin:0;
+  color:var(--accent);
+  letter-spacing:1px;
+}
+
+nav a{
+  color:#cbd5f5;
+  text-decoration:none;
+  margin-left:16px;
+  font-size:14px;
+}
+
+/* ===== HERO ===== */
+.hero{
+  padding:80px 20px;
+  text-align:center;
+}
+
+.hero h1{
+  font-size:36px;
+  line-height:1.2;
+  margin-bottom:15px;
+  background:linear-gradient(90deg,#38bdf8,#22c55e);
+  -webkit-background-clip:text;
+  color:transparent;
+}
+
+.hero p{
+  max-width:600px;
+  margin:auto;
+  font-size:16px;
+  color:#cbd5f5;
+}
+
+.hero button{
+  margin-top:30px;
+  padding:14px 28px;
+  font-size:16px;
+  border:none;
+  border-radius:10px;
+  background:linear-gradient(90deg,#38bdf8,#22c55e);
+  cursor:pointer;
+}
+
+/* ===== FEATURES ===== */
+.features{
+  padding:40px 20px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:20px;
+  max-width:1100px;
+  margin:auto;
+}
+
+.card{
+  background:linear-gradient(180deg,#0f172a,#020617);
+  border:1px solid #1e293b;
+  border-radius:16px;
+  padding:24px;
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+  border-color:var(--accent);
+}
+
+.card h3{
+  margin-top:0;
+  color:var(--accent);
+}
+
+/* ===== FOOTER ===== */
+footer{
+  margin-top:60px;
+  padding:20px;
+  text-align:center;
+  font-size:13px;
+  color:#94a3b8;
+  border-top:1px solid #0f172a;
+}
+</style>
 </head>
+
 <body>
 
-<header>🌍 AI World</header>
+<header>
+  <h2>AIWORLD</h2>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Tools</a>
+    <a href="#">Projects</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
 
-<section>
-  <h1>Website Live Ho Gayi 🎉</h1>
-  <p>Ye pura naya GitHub Pages project hai</p>
-  <button onclick="alert('AI World Working ✅')">
-    Test Button
+<section class="hero">
+  <h1>Smart AI Tools for Smart People</h1>
+  <p>
+    AIWorld ek advanced platform hai jahan data, analysis,
+    automation aur intelligence ek jagah milta hai.
+  </p>
+
+  <button onclick="alert('Next Step: Tools Page 🚀')">
+    Explore AI Tools
   </button>
 </section>
+
+<section class="features">
+  <div class="card">
+    <h3>📊 Smart Analysis</h3>
+    <p>Data patterns, trends aur logic ko AI ke sath samjho.</p>
+  </div>
+
+  <div class="card">
+    <h3>🤖 AI Search</h3>
+    <p>Numbers, tables aur records ka intelligent search.</p>
+  </div>
+
+  <div class="card">
+    <h3>⚡ Fast & Secure</h3>
+    <p>Purely client-side, fast load aur secure design.</p>
+  </div>
+
+  <div class="card">
+    <h3>📱 Mobile Friendly</h3>
+    <p>Perfect responsive layout – mobile first design.</p>
+  </div>
+</section>
+
+<footer>
+  © 2025 AIWorld | Built with ❤️ on GitHub Pages
+</footer>
 
 </body>
 </html>
